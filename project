@@ -1,0 +1,22 @@
+CREATE TABLE tennisexpress (id INTEGER PRIMARY KEY, item_type TEXT, color TEXT, size TEXT, price INTEGER, quantity INTEGER);
+
+INSERT INTO tennisexpress VALUES (1, "Fleece Tennis Hoodie", "Aqua", "Large", 80.00, 5);
+INSERT INTO tennisexpress VALUES (2, "Victory Tennis Skort", "Black", "Medium", 58.00, 6);
+INSERT INTO tennisexpress VALUES (3, "Advantage Tennis Shorts", "Maroon", "Medium", 65.00, 5);
+INSERT INTO tennisexpress VALUES (4, "Long Sleeve Tennis Top", "Pink", "Small", 62.00, 10);
+INSERT INTO tennisexpress VALUES (5, "Tennis Crop Top", "Yellow", "Medium", 40.00, 8);
+INSERT INTO tennisexpress VALUES (6, "Tennis Zip Long Sleeve", "White", "Small", 62.00, 6);
+INSERT INTO tennisexpress VALUES (7, "Tennis Polo Pullover", "White", "Large", 65.00, 8);
+INSERT INTO tennisexpress VALUES (8, "Tennis Heritage Sweatpant", "Aqua", "Small", 85.00, 10);
+INSERT INTO tennisexpress VALUES (9, "Tennis T-Shirt", "Gray", "Medium", 25.00, 9);
+INSERT INTO tennisexpress VALUES (10, "Tennis Victory Tank", "Pink", "Small", 43.00, 7);
+INSERT INTO tennisexpress VALUES (11, "Tennis Sweatband", "Black", "No Size", 12.00, 20);
+INSERT INTO tennisexpress VALUES (12, "Tennis Headband", "White", "No Size", 20.00, 20);
+INSERT INTO tennisexpress VALUES (13, "Tennis Leggings", "Gray", "Small", 45.00, 12);
+INSERT INTO tennisexpress VALUES (14, "Tennis Dry-Fit Hat", "Navy", "One Size", 18.00, 20);
+INSERT INTO tennisexpress VALUES (15, "Tennis Visor", "Green", "One Size", 20.00, 15);
+
+SELECT * FROM tennisexpress
+ORDER BY price;
+
+SELECT SUM (quantity) FROM tennisexpress;
